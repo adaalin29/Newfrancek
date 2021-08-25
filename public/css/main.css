@@ -1,0 +1,935 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+}
+
+#menu {
+    position: fixed;
+    height: 118px;
+    width: 100%;
+    background-color: rgba(4,4,4,0.6);
+    z-index: 1;
+}
+
+.container {
+    position: relative;
+    height: 100%;
+    margin: 0 100px 0 100px;
+}
+
+#burger {
+    cursor: pointer;
+    vertical-align: top;
+    margin-top: 40px;
+    display: inline-block;
+    height: 30px;
+}
+
+#burger div:nth-of-type(2){
+    margin-top: 5px;
+    margin-left: px;
+    height: 2px;
+    width: 25px;
+    background-color: #B6A27F;
+}
+
+#burger div:not(:nth-of-type(2)) {
+    margin-top: 5px;
+    margin-left: 2px;
+    height: 2px;
+    width: 20px;
+    background-color: #B6A27F;
+}
+
+#logo {
+    cursor: pointer;
+    vertical-align: top;
+    display: inline-block;
+    margin-top: 30px;
+    height: 50px;
+    width: 120px;
+    background-image: url("../images/francek_friseure_text@2x.png");
+    background-size: cover;
+}
+
+#icons {
+    display: inline-block;
+    margin-top: 40px;
+}
+
+#icons div:first-of-type {
+    cursor: pointer;
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    background-image: url("../images/page1.png");
+    background-size: cover;
+}
+
+#icons div:nth-of-type(2) {
+    cursor: pointer;
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    margin-left: 30px;
+    background-image: url("../images/time.png");
+    background-size: cover;
+}
+
+#flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+#proCare {
+    height: 730px;
+    width: 100%;
+    background-image: url("../images/16.png");
+    background-size: cover;
+}
+
+#find {
+    opacity: 0;
+    margin-top: 250px;
+    position: absolute;
+    font-family: Cormorant1, sans-serif;
+    font-size: 50px;
+    color: #B6A27F;
+}
+
+#join {
+    opacity: 0;
+    position: absolute;
+    margin-top: 380px;
+    font-family: Lato,sans-serif;
+    font-size: 20px;
+    line-height: 35px;
+    color: #ABABAB;
+}
+
+#follow {
+    position: absolute;
+    right: 0;
+    top: 330px;
+    display: inline-block;
+    height: 300px;
+    width: 140px;
+}
+
+#follow h1 {
+    position: relative;
+    right: -50px;
+    transform:rotate(90deg);
+    font-family: Segoe UI,sans-serif;
+    font-weight: lighter;
+    font-size: 23px;
+    color: #B6A27F;
+}
+
+#follow div:first-of-type {
+    cursor: pointer;
+    position: relative;
+    top: 80px;
+    right: -100px;
+    height: 35px;
+    width: 35px;
+    background-image: url("../images/social-media.png");
+    background-size: cover;
+}
+
+#follow div:first-of-type:hover {
+    filter: brightness(80%);
+}
+
+#follow div:nth-of-type(2) {
+    cursor: pointer;
+    position: relative;
+    top: 90px;
+    right: -100px;
+    height: 35px;
+    width: 35px;
+    background-image: url("../images/instagram.png");
+    background-size: cover;
+}
+
+#follow div:nth-of-type(2):hover {
+    filter: brightness(80%);
+}
+
+#faces {
+    height: 1050px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#faces>div {
+    display: inline-block;
+    height: 100%;
+    width: calc(100%/3);
+    vertical-align: top;
+}
+
+#faces>div:nth-of-type(1) div {
+    height: 33.17%;
+    width: 100%;
+}
+
+#firstFace {
+    position: relative;
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    background-image: url("../images/Repeat Grid 4.png");
+    background-size: cover;
+}
+
+.animClose{
+    animation-name: aniC;
+    animation-duration: 1s;
+    animation-fill-mode: forwards
+}
+
+@keyframes aniC {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.anim1 {
+    animation-name: anim11;
+    animation-duration: 3s;
+    animation-fill-mode: forwards
+}
+
+@keyframes anim11 {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+
+#faces>div:nth-of-type(1)>div:nth-of-type(2) {
+    background-color: #0B090F;
+    position: relative;
+}
+
+#beauFace {
+    background-image: url('../images/beautiful-woman-with-professional-make-up-PQX4NYV.png');
+    background-size: cover;
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+
+.anim4 {
+    animation-name: anim14;
+    animation-duration: 3s;
+    animation-fill-mode: forwards
+}
+
+@keyframes anim14 {
+    0%{
+        opacity: 0;
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+#faces>div:nth-of-type(2) div {
+    height: 33.16%;
+    width: 100%;
+}
+
+#faces>div:nth-of-type(2)>div:first-of-type {
+    background-color: #0B090F;
+    position: relative;
+}
+
+#blondFace {
+    opacity: 0;
+    position: relative;
+    transform: translateY(-100%);
+    z-index: -1;
+    background-image: url("../images/close-up-portrait-of-beautiful-woman-with-bright-PF82K33.png");
+    background-size: contain;
+}
+
+.anim2 {
+    animation-name: anim12;
+    animation-duration: 2s;
+    animation-fill-mode: forwards
+}
+
+@keyframes anim12 {
+    0% {
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    90% {
+        z-index: -1;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+        z-index: 0;
+    }
+}
+
+#faces>div:nth-of-type(2)>div:nth-of-type(3) {
+    background-color: #0B090F;
+    position: relative;
+}
+
+#youngFace {
+    opacity: 0;
+    width: 100%;
+    height: 66.3%;
+    background-image: url("../images/fashion-portrait-of-young-beautiful-woman-in-gold-YMQBW4G.png");
+    background-size: cover;
+}
+
+.anim3 {
+    animation-name: anim13;
+    animation-duration: 3s;
+    animation-fill-mode: forwards
+}
+
+.anim32 {
+    animation-name: anim13;
+    animation-duration: 2s;
+    animation-fill-mode: forwards
+}
+
+@keyframes anim13 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+         opacity: 1;
+    }
+}
+
+.anim32Rev {
+    animation-name: anim13;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-direction: reverse;
+}
+
+#veryFace {
+    width: 100%;
+    height:33.10%;
+    background-image: url("../images/portrait-of-a-very-beautiful-girl-in-the-studio-PSUEMAK.png");
+    background-size: cover;
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+}
+
+.anim5 {
+    animation-name: anim15;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes anim15 {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+.head {
+    opacity: 0;
+    position: absolute;
+    top: 100px;
+    left: 60px;
+    font-family: Cormorant1, sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    color: #B6A27F;
+}
+
+.para {
+    opacity: 0;
+    position: absolute;
+    top: 190px;
+    left: 60px;
+    font-family: Lato,sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    color: #ABABAB;
+}
+
+#about {
+    margin-top: 100px;
+    background-color:black;
+    width: 100%;
+    height: 820px;
+}
+
+#girl {
+    pointer-events: none;
+    opacity: 0;
+    vertical-align: top;
+    display: inline-block;
+    height: 530px;
+    width: 330px;
+    margin-left: 40px;
+    background-image: url("../images/beauty-fashion-model-girl-with-bright-makeup-PN3WRDR.png");
+    background-size: cover;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    z-index: -1;
+}
+
+#textPhoto {
+    margin-top: 100px;
+    display: inline-block;
+    height: 90%;
+    width: 70%;
+}
+
+#textPhoto h1 {
+    margin-top: 120px;
+    font-family: Cormorant1,sans-serif;
+    font-size: 45px;
+    color: #B6A27F;
+}
+
+#textPhoto p {
+    font-family: Lato,sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+    color: #ABABAB;
+    margin-top: 30px;
+    line-height: 29px;
+}
+
+#arrow {
+    cursor:pointer;
+    background-image: url("../images/Union 1.png");
+    height: 27px;
+    width: 123px;
+    margin-top: 55px;
+}
+
+#textPhotoText{
+    opacity: 0;
+    vertical-align: top;
+    display: inline-block;
+}
+
+#brunetteSide {
+    opacity: 0;
+    position: relative;
+    display: inline-block;
+    float: right;
+    height: 533px;
+    width: 330px;
+    background-image: url("../images/Repeat Grid 6.png");
+    background-size: 340px;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    z-index: -1;
+}
+
+.anim6 {
+    animation-name: anim16;
+    animation-duration: 3s;
+    animation-fill-mode: forwards
+}
+
+@keyframes anim16 {
+    0%{
+        pointer-events: none;
+        z-index: -1;
+        opacity: 0;
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+    }
+
+    20%{
+        z-index: 0;
+    }
+
+    100%{
+        pointer-events: auto;
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        z-index: 0;
+    }
+}
+
+
+#pictures {
+    margin-top: 100px;
+    width: 100%;
+    height: 530px;
+}
+
+.pText {
+    opacity: 0;
+    text-shadow: 3px 2px #1A1A1A;
+}
+
+#pictures>.container>div {
+    opacity: 0;
+    position: relative;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: calc(95%/5);
+}
+
+#pictures>.container>div::before{
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.6;
+}
+
+#pictures>.container>div:hover::before {
+    opacity: 0.2;
+}
+
+#pictures>.container>div:hover {
+}
+
+#pictures>.container>div p{
+    position: absolute;
+    font-family: Cormorant1,sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: #B6A27F;
+    z-index: 0;
+}
+
+#pictures>.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#pictures>.container>div:first-of-type {
+    background-image: url("../images/779.png") ;
+    background-size: cover;
+}
+
+#pictures>.container>div:nth-of-type(2) {
+    background-image: url("../images/312.png") ;
+    background-size: cover;
+}
+
+#pictures>.container>div:nth-of-type(3) {
+    background-image: url("../images/beauty-fashion-model-girl-with-colorful-dyed-hair-P6Q2BU8.png") ;
+    background-size: cover;
+}
+
+#pictures>.container>div:nth-of-type(4) {
+    background-image: url("../images/hair-styling-for-men-P3SFHJA.png") ;
+    background-size: cover;
+}
+
+#pictures>.container>div:nth-of-type(5) {
+    background-image: url("../images/beautiful-young-model-with-bright-makeup-and-PQNAW9J.png") ;
+    background-size: cover;
+}
+
+#pictures2 {
+    margin-top: 100px;
+    height: 400px;
+    width: 100%;
+}
+
+#pictures2>.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#pictures2>.container div {
+    cursor: pointer;
+    opacity: 0;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: calc(96%/3);
+}
+
+#pictures2>.container div::before {
+    content: "";
+    width: 100%; height: 98%;
+    background-color: rgb(0, 0, 0);
+    border: 5px solid #B6A27F;
+    opacity: 0.6;
+}
+
+#pictures2>.container div:hover::before {
+    opacity: 0.4;
+}
+
+#pictures2>.container>div:first-of-type {
+     background-image: url("../images/_CTH1745.png");
+    background-size: cover;
+ }
+
+#pictures2>.container>div:nth-of-type(2) {
+    background-image: url("../images/1005404_441134095983635_202394267_n.png");
+    background-size: cover;
+}
+
+#pictures2>.container>div:nth-of-type(3) {
+    background-image: url("../images/Francek_16.png");
+    background-size: cover;
+}
+
+#pictures2>.container>div p{
+    opacity: 0;
+    position: absolute;
+    font-family: Cormorant1,sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: #B6A27F;
+    text-shadow: 3px 2px #1A1A1A;
+}
+
+footer {
+    margin-top: 150px;
+    height: 275px;
+    width: 100%;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .container>div {
+    display: inline-block;
+}
+
+#left {
+    opacity: 0;
+    width: 420px;
+    height: 250px;
+}
+
+#left>h1 {
+    font-family: Cormorant1, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #B6A27F;
+}
+
+#left>p {
+    display: inline-block;
+    margin-top: 20px;
+    font-family: "Segoe UI",sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    color: #ABABAB;
+}
+
+#left>div {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    height: 46px;
+    width: 100%;
+    background-color: #101013;
+}
+
+#left>div p:first-of-type {
+    cursor: pointer;
+    margin-left: 10px;
+    display: inline-block;
+    font-family: "Segoe UI",sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    color: white;
+}
+#left>div p:nth-of-type(2) {
+    cursor: pointer;
+    margin-left: 200px;
+    display: inline-block;
+    font-family: "Segoe UI",sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    color: #B6A27F;
+}
+
+#arrow2 {
+    cursor: pointer;
+    margin-left: 15px;
+    display: inline-block;
+    height: 12px;
+    width: 75px;
+    background-image: url("../images/Union 2.png");
+    background-size: cover;
+}
+
+#checkbox {
+    width: 26px;
+    height: 26px;
+    background-color: black;
+    vertical-align: middle;
+    border: 2px solid #ABABAB;
+    border-radius: 50%;
+    box-shadow: 0 0 0px 5px black inset;
+    -webkit-appearance: none;
+    cursor: pointer;
+    outline: none;
+}
+
+#checkbox:checked {
+    background-color: #ABABAB;
+}
+
+#logo2 {
+    vertical-align: top;
+    height: 60px;
+    width: 147px;
+    background-image: url("../images/francek_friseure_text.png");
+}
+
+#right {
+    opacity: 0;
+    position: relative;
+    height: 100%;
+    width: 420px;
+}
+
+#right p:not(:last-of-type) {
+    cursor: pointer;
+    margin-top: 15px;
+    display: inline-block;
+    font-family: "Segoe UI",sans-serif;
+    font-size: 14px;
+    color: #ABABAB;
+}
+
+#right p:nth-of-type(2) {
+    margin-left: 240px;
+}
+
+#right p:nth-of-type(4) {
+    margin-left: 262px;
+}
+
+#right p:nth-of-type(6) {
+    margin-left: 161px;
+}
+
+#right p:last-of-type {
+    position: absolute;
+    bottom: 100px;
+    font-family: "Segoe UI",sans-serif;
+    font-size: 11px;
+    color: #ABABAB;
+}
+
+.menuShow {
+    display: none;
+    opacity: 0;
+}
+
+.show {
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,1);
+    animation-name: menuShow;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards
+}
+
+@keyframes menuShow {
+    0%{
+        display: none;
+        opacity: 0;
+    }
+    100%{
+        display: block;
+        opacity: 1;
+    }
+}
+
+.show>p {
+    position: relative;
+    left:90%;
+    top: 10%;
+    user-select: none;
+    height: 25px;
+    width: 35px;
+    cursor: pointer;
+    color: #ABABAB;
+    text-align: right;
+    font-family: "Segoe UI",sans-serif;
+}
+
+.show>p:active {
+    color: #B6A27F;
+    font-weight: bold;
+}
+
+#menuItems {
+    font-family: "Segoe UI",sans-serif;
+    font-size: 20px;
+    color: #ABABAB;
+    margin-top: 150px;
+    margin-left: 300px;
+    height: 600px;
+    width: 100%;
+}
+
+#menuItems>div:not(:nth-of-type(2)) {
+    padding-left: 50px;
+    margin-top: 20px;
+}
+
+#menuItems>div:not(:nth-of-type(2)):hover {
+    color: white;
+    cursor: pointer;
+}
+#menuItems>div:nth-of-type(2) p:hover{
+    color: white;
+    cursor: pointer;
+}
+
+#menuItems>div:nth-of-type(2){
+    width: 100%;
+    padding-top: 10px;
+    height: 37px;
+    display: inline-block;
+    overflow: hidden;
+    padding-left: 50px;
+    margin-top: 15px;
+}
+
+.menuAnim1 {
+    animation-name: menuAni;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes menuAni {
+    0%{
+        background-color: none;
+        height: 37px;
+    }
+    100%{
+        background-color: #101029;
+        height: 115px;
+    }
+}
+
+.menuAnim1Rev {
+    animation-name: menuAniR;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes menuAniR {
+    0%{
+        background-color: #101029;
+        height: 115px;
+    }
+    100%{
+        background-color: ;
+        height: 37px;
+    }
+}
+
+
+#menuItems>div:nth-of-type(2)>div>p:not(:first-of-type){
+    margin-top: 5px;
+}
+
+#menuItems>div:nth-of-type(2)>p{
+    vertical-align: top;
+    height: 100%;
+    display: inline-block;
+}
+
+#menuItems>div:nth-of-type(2)>p:hover{
+    color: white;
+}
+
+
+#menuItems>div:nth-of-type(2)>div{
+    opacity: 0;
+    display: inline-block;
+    margin-left: 100px;
+}
+
+#menuItems>div:nth-of-type(2)>div:nth-of-type(2)>p:nth-of-type(1){
+    height: 100%;
+}
+
+#textShow {
+    margin-top: 35px;
+    vertical-align: top;
+    display: inline-block;
+    height: 480px ;
+    width: 400px;
+}
+
+#textShow h1 {
+    margin-left: 20px;
+    margin-top: 60px;
+    font-family: Cormorant1,sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: #B6A27F;
+}
+
+#textShow p {
+    margin-left: 20px;
+    margin-top: 30px;
+    font-family: Lato, sans-serif;
+    font-size: 18px;
+    font-weight: lighter;
+    color: #ABABAB;
+}
+
+

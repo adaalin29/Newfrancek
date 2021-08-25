@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48.018" height="48.018" viewBox="0 0 48.018 48.018">
+  <g id="time" transform="translate(0.25 0.25)">
+    <path id="Path_1925" data-name="Path 1925" d="M23.759,0A23.759,23.759,0,1,0,47.518,23.759,23.786,23.786,0,0,0,23.759,0Zm0,45.934A22.175,22.175,0,1,1,45.934,23.759,22.2,22.2,0,0,1,23.759,45.934Z" transform="translate(0 0)" fill="#b8a584" stroke="#b6a27f" stroke-width="0.5"/>
+    <path id="Path_1926" data-name="Path 1926" d="M26.463,6a.792.792,0,0,0-.792.792V25.007H13.792a.792.792,0,1,0,0,1.584H26.463a.792.792,0,0,0,.792-.792V6.792A.792.792,0,0,0,26.463,6Z" transform="translate(-2.704 -1.248)" fill="#b8a584" stroke="#b6a27f" stroke-width="0.5"/>
+  </g>
+</svg>
